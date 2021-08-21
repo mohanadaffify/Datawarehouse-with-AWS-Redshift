@@ -56,7 +56,7 @@ The database schema is shown in the figure below
 ### How to Run
 
 1. Create tables by running `create_tables.py`.
-
+2- Add the required credentials to the dwg.cfg file as specefied in the project structure.
 2. Execute ETL process by running `etl.py`.
 
 
