@@ -33,7 +33,7 @@ songplay_id, start_time, user_id, level, song_id, artist_id, session_id, locatio
 + **time** - timestamps of records in **songplays** broken down into specific units
 
 The database schema is shown in the figure below 
-![schema](images/db_schema.png?raw=true)
+![schema](./images/db_schema.PNG)
 
 ### Data Warehouse Configurations and Setup
 * Create an `IAM Role` that makes `Redshift` able to access `S3 bucket` (ReadOnly)
@@ -51,7 +51,7 @@ The database schema is shown in the figure below
 + `create_tables.py` - created the fact and dimension tables for the star schema in `RedShift`
 + `etl.py` - This script load data from S3 into staging tables on Redshift and then process that data into the analytics tables on Redshift.
 + `sql_queries.py` - This file contains variables with SQL statements , which will be imported in `create_tables.py` and `etl.py`.
-+ `dhw.cfg` - Configuration file used that contains info about `Redshift`, `IAM` and `S3`.
++ `dhw.cfg` - Configuration file used that contains info about `Redshift`, `IAM` and `S3`. the credentials needed are database username and password , Redshift cluster endpoint and the `ARN` of the IAM Role
 
 ### How to Run
 

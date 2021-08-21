@@ -59,7 +59,7 @@ CREATE TABLE staging_songs(
 songplay_table_create = ("""
 CREATE TABLE songplays(
     songplay_id INT IDENTITY(0,1) NOT NULL,
-    start_time TIMESTAMP,
+    start_time TIMESTAMP NOT NULL,
     user_id VARCHAR NOT NULL,
     level VARCHAR,
     song_id VARCHAR NOT NULL,
@@ -194,6 +194,7 @@ SELECT
     extract(year from start_time), 
     extract(dayofweek from start_time)
 FROM staging_events as e
+WHERE page = 'NextSong'
 """)
 
 # QUERY LISTS
