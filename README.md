@@ -33,7 +33,7 @@ songplay_id, start_time, user_id, level, song_id, artist_id, session_id, locatio
 + **time** - timestamps of records in **songplays** broken down into specific units
 
 The database schema is shown in the figure below 
-![schema](images/db_schema.PNG?raw=true)
+![schema](images/db_schema.png?raw=true)
 
 ### Data Warehouse Configurations and Setup
 * Create an `IAM Role` that makes `Redshift` able to access `S3 bucket` (ReadOnly)
