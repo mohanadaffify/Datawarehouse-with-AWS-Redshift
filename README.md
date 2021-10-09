@@ -20,7 +20,7 @@ We have two staging tables which *copy* the JSON file inside the  **S3 buckets**
 + **staging_events** - actions done by users 
 
 
-I createa a star schema optimized for queries on song play analysis. This includes the following tables:
+I created a star schema optimized for queries on song play analysis. This includes the following tables:
 
 #### Fact Table 
 + **songplays** - records in event data associated with song plays i.e. records with page NextSong
